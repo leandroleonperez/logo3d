@@ -1,0 +1,95 @@
+const modelData = {
+  "asset": {
+    "version": "2.0",
+    "generator": "OpenAI Assistant"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [0]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Cube",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cube",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2
+          },
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR",
+      "max": [35],
+      "min": [0]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [1, 1, 1],
+      "min": [-1, -1, -1]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [0.57735, 0.57735, 0.57735],
+      "min": [-0.57735, -0.57735, -0.57735]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 72,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 360,
+      "byteLength": 288,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 648
+    }
+  ]
+};
+
+const modelGLTF = {
+  "scene": modelData.scene,
+  "scenes": modelData.scenes,
+  "nodes": modelData.nodes,
+  "meshes": modelData.meshes,
+  "accessors": modelData.accessors,
+  "bufferViews": modelData.bufferViews,
+  "buffers": modelData.buffers
+};
+
+console.log(JSON.stringify(modelGLTF));
